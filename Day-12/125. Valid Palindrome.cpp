@@ -1,3 +1,9 @@
+#include <string>
+#include <iostream>
+#include <vector>
+#include <algorithm> 
+using namespace std;
+
 void lowercase(string &s){
    
     for (int i = 0;i<=s.size()-1;i++){
