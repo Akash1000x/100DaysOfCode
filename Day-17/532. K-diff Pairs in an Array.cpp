@@ -59,7 +59,6 @@ public:
         set<pair<int,int>> ans;
 
         int n = nums.size();
-        int count = 0;
         for(int i= 0;i<n;i++){
 
             if(binerysearch(nums , i+1 ,nums[i]+k) != -1){
