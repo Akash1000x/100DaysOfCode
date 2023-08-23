@@ -1,4 +1,39 @@
 class Solution {
+    
+public:
+
+    string reverseVowels(string s) {
+
+        string vowels = {"aeiouAEIOU"}; 
+
+        int i = 0;
+        int e = s.size()-1;
+
+        while(i<e){
+            if(vowels.find(s[i]) != string::npos && vowels.find(s[e]) != string::npos){
+                swap(s[i],s[e]);
+                i++;
+                e--;
+            }
+
+            else if( vowels.find(s[i]) == string::npos){
+                i++;
+            }
+            else{
+                e--;
+            }
+
+        }
+        return s;
+    }
+};
+
+
+
+//or
+
+
+class Solution {
 public:
     string reverseVowels(string s) {
 
