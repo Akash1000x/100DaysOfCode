@@ -20,3 +20,67 @@ public:
     return ans;
     }
 };
+
+//or
+
+
+class Solution {
+public:
+    int romanToInt(string s) {
+        int out = 0;
+        for(int i = 0; i< s.size(); i++){
+            switch (s[i])
+            {
+                case 'I':
+
+                    if(s[i+1] == 'V'){
+                        out = out + 4;
+                        i++;
+                    }else if(s[i+1] == 'X'){
+                        out = out + 9;
+                        i ++;
+                    }else{
+                        out = out + 1;
+                    }
+                    break;
+                case 'V':
+                    out = out+5;
+                    break;
+                case 'X':
+                    if(s[i+1] == 'L'){
+                        out = out + 40;
+                        i++;
+                    }else if(s[i+1] == 'C'){
+                        out = out + 90;
+                        i ++;
+                    }else{
+                        out = out + 10;
+                    }
+
+                    break;
+                case 'L':
+                    out = out+ 50;
+                    break;
+                case 'C':
+                    if(s[i+1] == 'D'){
+                        out = out + 400;
+                        i ++;
+                    }else if(s[i+1] == 'M'){
+                        out = out + 900;
+                        i++;
+                    }else{
+                        out = out + 100;
+                    }
+
+                    break;
+                case 'D':
+                    out =  out+ 500;
+                    break;
+                case 'M':
+                    out = out+ 1000;
+                    break;
+            }
+        }
+        return out;
+    }
+};
