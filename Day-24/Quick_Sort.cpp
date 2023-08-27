@@ -38,10 +38,14 @@ void quickSort(int *arr,int left,int right){
         return ;
     }
 
+    //finding pivot index and arrange element according to pivot element
     int p = partition(arr,left,right);
 
-    quickSort(arr,left,p-1);
+    // recurison calls 
 
+    //for left 
+    quickSort(arr,left,p-1);
+    //for right
     quickSort(arr,p+1,right);
 }
 
