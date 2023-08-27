@@ -74,8 +74,9 @@ void mergSort(int *arr,int start,int end){
 
 int main(){
     int arr[] = {55,4,26,22,7};
+    int n = 5;
     int start = 0;
-    int end = 5;
+    int end = n-1;
     mergSort(arr,start,end);
 
     for(int i = 0;i<5;i++){
