@@ -103,3 +103,77 @@ public:
         
     }
 };
+
+
+
+
+
+//or
+
+
+// #include<iostream>
+// #include<vector>
+// #include<unordered_map>
+// using namespace std;
+
+// //solution by unordered map
+
+// unordered_map<int,bool> rowcheck;
+// unordered_map<int,bool> upperLeftDiagonalCheck;
+// unordered_map<int,bool> downLeftDiagonalCheck;
+
+
+// void printSolution(vector<vector<char>> &board,int n){
+//     for (int i = 0; i < n; i++)
+//     {
+//         for (int j = 0; j < n; j++)
+//         {
+//             cout<<board[i][j]<<" ";
+//         }
+//         cout<<endl;
+        
+//     }
+//     cout<<endl;
+    
+// }
+
+// void solve(vector<vector<char>> &board,int n,int col){
+//     //base case
+//     if(col >= n){
+//         printSolution(board,n);
+//         return;
+//     }
+
+//     //1st solve kr lenge baki recurison sambhal lega
+//     for (int i = 0; i < n; i++)
+//     {
+//         if( rowcheck[i]==false && upperLeftDiagonalCheck[col-i] == false && downLeftDiagonalCheck[i+col] == false){
+
+//             board[i][col] = 'Q';
+//             rowcheck[i] = true;
+//             upperLeftDiagonalCheck[col-i] = true;
+//             downLeftDiagonalCheck[i+col] = true;
+
+//             //recurisive call
+//             solve(board,n,col+1);
+            
+//             //backtrack
+//             board[i][col] = '-';
+//             rowcheck[i] = false;
+//             upperLeftDiagonalCheck[col-i] = false;
+//             downLeftDiagonalCheck[i+col] = false;
+//         }
+//     }
+    
+// }
+
+// int main(){
+
+//     vector<vector<char>> board(4,vector<char>(4,'-'));
+    
+//     int n = 4;
+//     int col = 0;
+//     solve(board,n,col);
+
+//     return 0;
+// }
