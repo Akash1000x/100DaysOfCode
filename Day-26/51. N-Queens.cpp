@@ -105,7 +105,8 @@ public:
 };
 
 
-
+//Time complexity  -> O(n!)   or  O(n^n)
+//Space complexity -> O(n*m)
 
 
 //or

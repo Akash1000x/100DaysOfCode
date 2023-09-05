@@ -79,13 +79,15 @@ int main(){
         cout<<i<<" ";
     }
 
-    if(path.size() == 0){
+    if(path.size() == 0){ 
         cout<< "No path exists";
     }
     
     return 0;
 }
 
+//Time complexity  -> O(4^(n*m))
+//Space complexity -> O(n)
 
 //or
 

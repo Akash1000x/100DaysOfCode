@@ -38,7 +38,7 @@ void quickSort(int *arr,int left,int right){
         return ;
     }
 
-    //finding pivot index and arrange element according to pivot element
+    //finding pivot index and arrange element according to pivot element 
     int p = partition(arr,left,right);
 
     // recurison calls 
@@ -60,3 +60,6 @@ int main(){
     }
     return 0;
 }
+
+//Time complexity  -> O(nlog(n))
+//Space complexity -> O(n)

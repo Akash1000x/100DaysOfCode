@@ -84,3 +84,6 @@ int main(){
     }
     return 0;
 }
+
+//Time complexity  -> O(nlog(n))
+//Space complexity -> O(n)
