@@ -4,7 +4,7 @@ using namespace std;
 
 void merge(vector<int> &nums, int s, int e, int mid)
 {
-
+    //not using extra space and merging in place in the array itself using gap method of shell sort algorithm
     int gap = (e - s + 1) / 2 + (e - s + 1) % 2;
 
     while (gap > 0)
@@ -59,3 +59,6 @@ int main()
     }
     return 0;
 }
+
+// Time Complexity: O(nlogn)
+// Space Complexity: O(1)
