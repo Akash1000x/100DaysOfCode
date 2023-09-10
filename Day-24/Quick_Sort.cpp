@@ -61,5 +61,65 @@ int main(){
     return 0;
 }
 
-//Time complexity  -> O(nlog(n))
+//Average case T.C. -> O(nlogn)
+//worse case T.C.-> O(n^2)
 //Space complexity -> O(n)
+
+//or
+
+
+#include <iostream>
+#include <vector>
+using namespace std;
+
+int partition(int *arr, int left, int right)
+{
+    int pivot = arr[right];
+    int i = left-1;
+    int j = left;
+
+    while (j<right)
+    {
+        if(arr[j] <= pivot){
+            i++;
+            swap(arr[i],arr[j]);
+        }
+        j++;
+    }
+
+    swap(arr[i+1],arr[j]);
+    return i+1;
+    
+
+}
+
+void quickSort(int *arr, int left, int right)
+{
+
+    if (left >= right)
+    {
+        return;
+    }
+
+    int p = partition(arr, left, right);
+
+    quickSort(arr, left, p - 1);
+
+    quickSort(arr, p + 1, right);
+}
+
+int main()
+{
+    int arr[] = {55, 4, 26, 22, 7, 9, 65, 9, 9, 5, 2, 2};
+    int n = 12;
+    int left = 0;
+    int right = n - 1;
+
+    quickSort(arr, left, right);
+
+    for (int i = 0; i < n; i++)
+    {
+        cout << arr[i] << " ";
+    }
+    return 0;
+}

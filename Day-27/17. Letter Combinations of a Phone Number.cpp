@@ -10,6 +10,7 @@ public:
         //base case
         if(index >= digits.length()){
             ans.push_back(output);
+            return;
         }
 
         int digit = digits[index] -'0';

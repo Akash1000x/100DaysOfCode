@@ -67,7 +67,7 @@ public:
             return;
         }
 
-        //solve 1 case baki redurison dekh lega
+        //solve 1 case baki recurison dekh lega
         for(int i = 0;i<n;i++){
 
             if(isSafe(NQueens,i,n,col)){
