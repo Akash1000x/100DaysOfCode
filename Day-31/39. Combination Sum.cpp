@@ -34,3 +34,7 @@ public:
         return ans;
     }
 };
+
+
+//time complexity : O(N^target)
+//space complexity : O(target)
