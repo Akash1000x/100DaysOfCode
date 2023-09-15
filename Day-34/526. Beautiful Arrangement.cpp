@@ -1,5 +1,6 @@
 class Solution {
 public:
+    //currNum = current number
     void countArrangements(int n, int currNum, vector<int>& v, int& count) {
         if (currNum > n) {
             count++;
