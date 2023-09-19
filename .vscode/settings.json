@@ -6,6 +6,8 @@
         "initializer_list": "cpp",
         "vector": "cpp",
         "algorithm": "cpp",
-        "unordered_map": "cpp"
+        "unordered_map": "cpp",
+        "xhash": "cpp",
+        "ostream": "cpp"
     }
 }
