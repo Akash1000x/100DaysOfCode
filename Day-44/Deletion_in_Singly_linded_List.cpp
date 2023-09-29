@@ -17,6 +17,10 @@ public:
         this->data = data;
         this->next = NULL;
     }
+    ~Node()
+    {
+        cout << "Node with data " << this->data << " is deleted" << endl;
+    }
 };
 
 // Insertion at tail

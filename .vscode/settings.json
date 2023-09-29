@@ -8,6 +8,7 @@
         "algorithm": "cpp",
         "unordered_map": "cpp",
         "xhash": "cpp",
-        "ostream": "cpp"
+        "ostream": "cpp",
+        "utility": "cpp"
     }
 }
