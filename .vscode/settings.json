@@ -9,6 +9,7 @@
         "unordered_map": "cpp",
         "xhash": "cpp",
         "ostream": "cpp",
-        "utility": "cpp"
+        "utility": "cpp",
+        "type_traits": "cpp"
     }
 }
