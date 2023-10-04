@@ -18,6 +18,7 @@ public:
     }
 };
 
+//tortoise algorithm 
 Node* findMiddle(Node* &head){
 
     //ll is empty
