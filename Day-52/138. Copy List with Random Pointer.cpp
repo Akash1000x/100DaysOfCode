@@ -26,7 +26,6 @@ Node* solve(Node* head,unordered_map<Node*,Node*> &mp){
     mp[head] = newHead;
     newHead->next = solve(head->next,mp);
     if(head->random){
-        // Node *ar = head->random;
         newHead->random = mp[head->random];
     }
     return newHead;
@@ -64,7 +63,14 @@ public:
     it = head;
     while(it){
         Node* clonedNode = it->next;
+        
         clonedNode->random = it->random ? it->random->next : NULL;
+        // if(it->random){
+        //     clonedNode->random = it->random->next;
+        // }
+        // else{
+        //     clonedNode->random = NULL;
+        // }
         it = it->next ->next;
     }
     
