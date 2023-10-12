@@ -11,6 +11,7 @@
         "ostream": "cpp",
         "utility": "cpp",
         "type_traits": "cpp",
-        "stack": "cpp"
+        "stack": "cpp",
+        "iterator": "cpp"
     }
 }
