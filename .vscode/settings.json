@@ -10,6 +10,7 @@
         "xhash": "cpp",
         "ostream": "cpp",
         "utility": "cpp",
-        "type_traits": "cpp"
+        "type_traits": "cpp",
+        "stack": "cpp"
     }
 }
