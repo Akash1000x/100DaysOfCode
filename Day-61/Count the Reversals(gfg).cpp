@@ -1,3 +1,6 @@
+//minimum bracket reversal problem
+
+
 int countRev (string s)
 {
     //if the size of string is odd.
