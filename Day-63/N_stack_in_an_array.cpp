@@ -27,7 +27,7 @@ public:
 
     }
 
-    //push x into mth stack.
+    //push x into mth stack.( m vi stack me x dal do )
     bool push(int x, int m){
 
         if(freeSpot == -1){
