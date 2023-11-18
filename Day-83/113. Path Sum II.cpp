@@ -15,7 +15,7 @@ class Solution {
             return ;
         }
 
-        targetSum = targetSum-root->val;
+        targetSum = targetSum - root->val;
         path.push_back(root->val);
         
         //path found
@@ -33,7 +33,7 @@ public:
     vector<vector<int>> pathSum(TreeNode* root, int targetSum) {
         vector<vector<int>> ans;
         vector<int> path;
-         helper(root,targetSum,ans,path);
+        helper(root,targetSum,ans,path);
         return ans;
 
 
