@@ -55,64 +55,39 @@ void levelOrderTraversal(Node *root)
 
     while (!q.empty())
     {
-         if(q.front() == NULL){
-             cout<<endl;
-             q.pop();
-             if(!q.empty()){
-                 q.push(NULL);
-             }
-         }
 
         Node *temp = q.front();
 
         q.pop();
 
-        //other approach to print new line 
-        // if (temp== NULL)
-        // {
-        //     cout << endl;
-        //     if (!q.empty())
-        //     {
-        //         q.push(NULL);
-        //     }
-        // }
-        // else
-        // {
-        //     // printing node element
-        //     cout << temp->data << " ";
-
-        //     // check left root nood exist or not
-        //     if (temp->left)
-        //     {
-        //         // if exist push it in queue
-        //         q.push(temp->left);
-        //     }
-
-        //     // check right root nood exist or not
-        //     if (temp->right)
-        //     {
-        //         // if exist push it in queue
-        //         q.push(temp->right);
-        //     }
-        // }
-
-
-        // printing node element
-        cout << temp->data << " ";
-
-        // check left root nood exist or not
-        if (temp->left)
+        if (temp== NULL)
         {
-            // if exist push it in queue
-            q.push(temp->left);
+            cout << endl;
+            if (!q.empty())
+            {
+                q.push(NULL);
+            }
+        }
+        else
+        {
+            // printing node element
+            cout << temp->data << " ";
+
+            // check left root nood exist or not
+            if (temp->left)
+            {
+                // if exist push it in queue
+                q.push(temp->left);
+            }
+
+            // check right root nood exist or not
+            if (temp->right)
+            {
+                // if exist push it in queue
+                q.push(temp->right);
+            }
         }
 
-        // check right root nood exist or not
-        if (temp->right)
-        {
-            // if exist push it in queue
-            q.push(temp->right);
-        }
     }
 }
 
